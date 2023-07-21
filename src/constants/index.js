@@ -14,15 +14,21 @@ import {
     mongodb,
     git,
     figma,
-        docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    next,
+    liceo,
+    kodego,
+    bootstrap,
+    cert1,
+    cert2,
+    cert3,
+    cert4,
+    aprompt,
+    achat,
+    vajj,
+    moviehub,
+    maccafe,
+    firstportfolio,
+    arecipe,
   } from "../assets";
   
   export const navLinks = [
@@ -59,6 +65,37 @@ import {
     },
   ];
   
+  const certificates = [
+    {
+      name: cert1,  
+      img: cert1,
+      icon: kodego,
+      iconBg: "#ffff",
+      date: "March 2023"
+      
+    },
+    {
+      name: cert2,  
+      img: cert2,
+      icon:kodego,
+      iconBg: "#ffff",
+      date: "March 2023"
+    },
+    {
+      name: cert3,  
+      img: cert3,
+      icon:kodego,
+      iconBg: "#ffff",
+      date: "March 2023"
+    },
+    {
+      name: cert4,  
+      img: cert4,
+      icon: liceo,
+      iconBg: "#383E56",
+      date: "March 2015"
+    },       
+];
   const technologies = [
     {
       name: "HTML 5",
@@ -97,8 +134,8 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "bootstrap",
+      icon: bootstrap,
     },
     {
       name: "git",
@@ -109,63 +146,8 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
-  ];
-  
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      name: "nextjs",
+      icon: next,
     },
   ];
   
@@ -198,68 +180,153 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Aprompt",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Ai web inspired that allows posting via prompt, search post by profile, keywords, and tags. 1st Next JS project to get familiarize with its basic and CRUD functionalities",
       tags: [
         {
-          name: "react",
+          name: "NextJS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: aprompt,
+      source_code_link: "https://a-aprompt.vercel.app",
     },
     {
-      name: "Job IT",
+      name: "Achat",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A messenger clone created for practice purposes. specially learning new tech stacks like typescript, prisma and pusher. It has a live everything a live chat can offer",
       tags: [
         {
-          name: "react",
+          name: "NextJS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "TypeScript",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Prisma",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: achat,
+      source_code_link: "https://achat-ledeuadian.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Vajj",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive project management system which was created for the bootcamp final capstone project. It uses laravel and php framework and MySQL as its database",
       tags: [
         {
-          name: "nextjs",
+          name: "Laravel",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "MySQL",
           color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: vajj,
+      source_code_link: "https://vajj-system.devph.space/",
+    },
+    {
+      name: "Movie Hub",
+      description:
+        "A Netflix inspired website which was targeted to be a semi free website and with some exclusive feature for those who subscribe. 2nd mini project during bootcamp.",
+      tags: [
+        {
+          name: "React Native",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Express",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: moviehub,
+      source_code_link: "https://movies-hub-ten.vercel.app/",
+    },
+    {
+      name: "MacCafe",
+      description:
+        "1st website created after going back to web developing path for so long. It is a static Cafe Shop Website and is presented as our 1st mini project for our 3 months bootcamp.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: maccafe,
+      source_code_link: "https://ledeuadian.github.io",
+    },
+    {
+      name: "1st Portfolio",
+      description:
+        "1st portfolio created during the 1st month of bootcamp training. Exploring the basics of vanilla javascript,html, and css with base media queries and keyframes.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: firstportfolio,
+      source_code_link: "https://adrianabellanosa.devph.space/",
     },
+    {
+      name: "A-Recipes",
+      description:
+        "Recipe website using online Edamam API. it allows to search different recipe of your own accord. Created for a 5 days test & assessment purposes",
+      tags: [
+        {
+          name: "NextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "rest API",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: arecipe,
+      source_code_link: "https://a-recipes.vercel.app/",
+    },
+    
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, testimonials, projects, certificates };
