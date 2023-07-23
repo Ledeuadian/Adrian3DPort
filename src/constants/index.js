@@ -29,6 +29,7 @@ import {
     maccafe,
     firstportfolio,
     arecipe,
+    fonechat,
   } from "../assets";
   
   export const navLinks = [
@@ -325,6 +326,27 @@ import {
       ],
       image: arecipe,
       source_code_link: "https://a-recipes.vercel.app/",
+    },
+    {
+      name: "fonechat",
+      description:
+        "Another chat app for 3 days assessment purposes. A whatsapp inspired clone with call and video call feature. tried different approach from my 1st a-chat project ",
+      tags: [
+        {
+          name: "NextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Express JS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: fonechat,
+      source_code_link: "https://fonechat.vercel.app/",
     },
     
   ];

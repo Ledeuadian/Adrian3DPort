@@ -32,6 +32,7 @@ import moviehub from "./MoviesHub.png";
 import vajj from "./vajj.png";
 import firstportfolio from "./1stportfolio.png";
 import arecipe from "./arecipe.png";
+import fonechat from "./fonechat.png";
 
 import cert1 from "./cert1.png";
 import cert2 from "./cert2.png";
@@ -74,4 +75,5 @@ export {
   www,
   firstportfolio,
   arecipe,
+  fonechat,
 };

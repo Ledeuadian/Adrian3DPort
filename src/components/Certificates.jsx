@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,8 +11,11 @@ import { styles } from "../styles";
 import { certificates } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import Modal from "./Modal";
 
 const CertificateCard = ({ certificate }) => {
+  const [showModal, setShowModal] = useState(false)
+  const handeOnClose = () => setShowModal(false)
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -36,15 +39,18 @@ const CertificateCard = ({ certificate }) => {
       {/* Left and right Card */}
 
       <div>
-          <img src ={certificate.img} className=""/>
+          <img src ={certificate.img} className="cursor-pointer" onClick={()=> setShowModal(true)} />
       </div>
+      <Modal isVisible={showModal} onClose={handeOnClose} imgSrc = {certificate.img}/>
     </VerticalTimelineElement>
+  
   );
 };
 
 const Certificate = () => {
   return (
     <>
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
@@ -64,6 +70,7 @@ const Certificate = () => {
           ))}
         </VerticalTimeline>
       </div>
+      
     </>
   );
 };
