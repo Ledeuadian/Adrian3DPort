@@ -7,6 +7,7 @@ import Certificates from './Certificates';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import VoiceTrigger from './VoiceTrigger';
 
 
 export {
@@ -21,5 +22,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  VoiceTrigger
 }

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -19,7 +20,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#d30000]'>Adrian</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Aspiring full stack Web Developer <br className='sm:block hidden' />
+            A Junior Software Engineer <br className='sm:block hidden' />
             Living in the Philippines
           </p>
         </div>
